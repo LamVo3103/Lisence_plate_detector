@@ -1,0 +1,16 @@
+# Chặn các thư mục chứa ảnh Dataset
+train/
+valid/
+test/
+dataset/
+*.jpg
+*.png
+*.jpeg
+
+# Chặn các file rác của hệ统
+__pycache__/
+.idea/
+venv/
+.env
+
+# Giữ lại thư mục saved_models để bạn bè tải file weights (.h5)
