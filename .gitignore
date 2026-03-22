@@ -1,16 +1,26 @@
-# Chặn các thư mục chứa ảnh Dataset
+# Chặn các thư mục Dataset (Không đẩy data nặng lên)
 train/
 valid/
 test/
 dataset/
-*.jpg
-*.png
-*.jpeg
 
-# Chặn các file rác của hệ统
+# Chặn rác hệ thống và PyCharm
 __pycache__/
 .idea/
 venv/
 .env
 
-# Giữ lại thư mục saved_models để bạn bè tải file weights (.h5)
+# ====================================================================
+# 🔌 CHỈ "MỞ CỬA" CHO 7 ẢNH TEST ĐI QUA MÀNG LỌC
+# ====================================================================
+*.png
+*.jpeg
+
+*.jpg              # Chặn tất cả ảnh đuôi .jpg bên ngoài dataset
+!test_car.jpg     # TRỪ cái này, cho phép upload
+!test_car1.jpg    # TRỪ cái này, cho phép upload
+!test_car2.jpg    # TRỪ cái này, cho phép upload
+!test_car3.jpg    # TRỪ cái này, cho phép upload
+!test_car4.jpg    # TRỪ cái này, cho phép upload
+!test_car5.jpg    # TRỪ cái này, cho phép upload
+!test_car6.jpg    # TRỪ cái này, cho phép upload
